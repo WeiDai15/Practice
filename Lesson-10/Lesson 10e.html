@@ -7,17 +7,14 @@
   <title>Lesson 9f</title>
   <style>
     .info {
-      display: inline-block;
-      margin-right: 20px;
+      
       border: none;
       box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
     }
 
     .picture-review {
-      width: 250px;
-      object-fit: cover;
+      width: 100%;
       margin-bottom: 12px;
-      display: block;
     }
 
     p {
@@ -29,7 +26,6 @@
     .name {
       font-size: 20px;
       font-weight: bold;
-      
       margin-bottom: 4px;
     }
 
@@ -68,49 +64,57 @@
       width: 230px;
       margin-left: 12px;
     }
+
+    .grid{
+      display: grid;
+      grid-template-columns: 250px 250px 250px;
+      column-gap: 20px;
+    }
   </style>
 </head>
 
 <body>
-  <div class="info">
-    <img class="picture-review" src="/Lesson-10/abc.jpg" alt="">
-    <div class="profile">
-      <p class="name">Oliver</p>
-  
-      <img class="profile-picture" src="/Lesson-10/abc.jpg" alt="">
-      <p class="description">2 mutual friends</p>
+  <div class="grid">
+    <div class="info">
+      <img class="picture-review" src="/Lesson-10/abc.jpg" alt="">
+      <div class="profile">
+        <p class="name">Oliver</p>
+    
+        <img class="profile-picture" src="/Lesson-10/abc.jpg" alt="">
+        <p class="description">2 mutual friends</p>
 
-    
-    
-      <button class="add-friend-button">Add Friend</button>
+      
+      
+        <button class="add-friend-button">Add Friend</button>
+      </div>
     </div>
-  </div>
-  <div class="info">
-    <img class="picture-review" src="/Lesson-10/abc.jpg" alt="">
+    <div class="info">
+      <img class="picture-review" src="/Lesson-10/abc.jpg" alt="">
 
-    <div class="profile">
-      <p class="name">Mimi</p>
-    
+      <div class="profile">
+        <p class="name">Mimi</p>
+      
 
-      <img class="profile-picture" src="/Lesson-10/abc.jpg" alt="">
-
-
-      <p class="description">3 mutual friends</p>
+        <img class="profile-picture" src="/Lesson-10/abc.jpg" alt="">
 
 
-      <button class="add-friend-button">Add Friend</button>
+        <p class="description">3 mutual friends</p>
+
+
+        <button class="add-friend-button">Add Friend</button>
+      </div>
     </div>
-  </div>
-  <div class="info">
-    <img class="picture-review" src="/Lesson-10/abc.jpg" alt="">
+    <div class="info">
+      <img class="picture-review" src="/Lesson-10/abc.jpg" alt="">
 
-    <div class="profile">
-      <p class="name">Rex</p>
-    
-      <img class="profile-picture" src="/Lesson-10/abc.jpg" alt="">
-      <p class="description">4 mutual friends</p>
-    
-      <button class="add-friend-button">Add Friend</button>
+      <div class="profile">
+        <p class="name">Rex</p>
+      
+        <img class="profile-picture" src="/Lesson-10/abc.jpg" alt="">
+        <p class="description">4 mutual friends</p>
+      
+        <button class="add-friend-button">Add Friend</button>
+      </div>
     </div>
   </div>
 </body>
