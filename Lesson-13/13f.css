@@ -1,0 +1,68 @@
+div{
+  font-family: arial;
+  font-size: 18px;
+}
+
+.profile-picture{
+  height: 60px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.content-container{
+  margin-left: 10px;
+  line-height: 25px;
+}
+
+.container{
+  display: flex;
+  padding: 10px 12px 10px 12px;
+  flex-direction: row;
+  align-items: center;
+  width: 500px;
+  border: 1px solid;
+}
+
+.picture-container{
+  align-self: flex-start;
+}
+
+.name{
+  display: flex;
+}
+
+.person{
+  font-weight: bold;
+}
+
+.person-name{
+  margin-left: 5px;
+  color: gray;
+}
+
+.video-preview{
+  margin-top: 20px;
+  width: 400px;
+  border: 1px solid;
+  border-color: rgb(232, 232, 232, 232);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  align-items: center;
+}
+.thumbnail-column{
+  width: 100px;
+  height: 100px;
+  background-color: rgb(232, 232, 232);
+  
+}
+
+.video-info-column{
+  flex: 1;
+  margin-left: 20px;
+}
+
+.video-website{
+  color: gray;
+}
