@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <button onclick="
+    showCartQuantity();
+    ">Show Quantity</button>
+  <button onclick="
+    updateCartQuantity(1);
+  ">Add to Cart</button>
+  <button>+2</button>
+  <button>+3</button>
+  <button>+4</button>
+  <button>+5</button>
+  <button>Remove from cart</button>
+  <button>-2</button>
+  <button>-3</button>
+  <p class="js-cart-quantity"></p>
+
+  <script>
+    let cartQuantity = 0;
+
+    //display the cart quantity when the page loads
+    displayCartQuantity();
+    
+    function updateCartQuantity(change) {
+      if (cartQuantity + change > 10) {
+        alert('The cart is fulll');
+        return;
+      }
+      if (cartQuantity + change < 0) {
+        alert('Not enough items in the cart');
+        return;
+      }
+
+      cartQuantity += change;
+
+      //display the cart quantity agter updating
+      displayCartQuantity();
+    }  
+
+    function showCartQuantity() {
+      document.querySelector('.js-cart-quantity')
+        .innerHTML = `Cart quantity: ${cartQuantity}`
+    }
+  </script>
+</body>
+</html>
